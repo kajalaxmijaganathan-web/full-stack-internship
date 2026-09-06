@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Myntra Style Store</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#ff3f6c;
+}
+
+.search input{
+    padding:8px;
+    width:220px;
+}
+
+/* BANNER */
+
+.banner img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* CATEGORY TABS */
+
+.tabs{
+    text-align:center;
+    margin:30px;
+}
+
+.tabs label{
+    background:#ff3f6c;
+    color:white;
+    padding:12px 20px;
+    margin:5px;
+    cursor:pointer;
+    border-radius:5px;
+    display:inline-block;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+/* PRODUCT SECTION */
+
+.products{
+    display:none;
+    padding:20px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px gray;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.price{
+    color:#ff3f6c;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#ff3f6c;
+    color:white;
+    border:none;
+    margin-top:10px;
+}
+
+/* TAB LOGIC */
+
+#men:checked ~ .men-products{
+    display:block;
+}
+
+#women:checked ~ .women-products{
+    display:block;
+}
+
+#kids:checked ~ .kids-products{
+    display:block;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .search input{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        <img src="https://picsum.photos/80?1" alt="logo">
+        <h2>MYNTRA</h2>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Products">
+    </div>
+
+</div>
+
+<!-- BANNER -->
+
+<div class="banner">
+    <img src="https://picsum.photos/1200/350" alt="banner">
+</div>
+
+<!-- CATEGORY BUTTONS -->
+
+<div class="tabs">
+
+    <label for="men">Men</label>
+    <label for="women">Women</label>
+    <label for="kids">Kids</label>
+
+</div>
+
+<input type="radio" name="category" id="men" checked>
+<input type="radio" name="category" id="women">
+<input type="radio" name="category" id="kids">
+
+<!-- MEN PRODUCTS -->
+
+<div class="products men-products">
+
+<h2 style="text-align:center;">Men Collection</h2><br>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://picsum.photos/250/220?11">
+<div class="card-content">
+<h3>Men T-Shirt</h3>
+<p class="price">₹799</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?12">
+<div class="card-content">
+<h3>Men Shoes</h3>
+<p class="price">₹1499</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?13">
+<div class="card-content">
+<h3>Watch</h3>
+<p class="price">₹1999</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- WOMEN PRODUCTS -->
+
+<div class="products women-products">
+
+<h2 style="text-align:center;">Women Collection</h2><br>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://picsum.photos/250/220?21">
+<div class="card-content">
+<h3>Women Dress</h3>
+<p class="price">₹1299</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?22">
+<div class="card-content">
+<h3>Hand Bag</h3>
+<p class="price">₹999</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?23">
+<div class="card-content">
+<h3>Heels</h3>
+<p class="price">₹1499</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- KIDS PRODUCTS -->
+
+<div class="products kids-products">
+
+<h2 style="text-align:center;">Kids Collection</h2><br>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://picsum.photos/250/220?31">
+<div class="card-content">
+<h3>Kids T-Shirt</h3>
+<p class="price">₹499</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?32">
+<div class="card-content">
+<h3>Kids Shoes</h3>
+<p class="price">₹799</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/250/220?33">
+<div class="card-content">
+<h3>School Bag</h3>
+<p class="price">₹699</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Contact Us</h3>
+
+<p>📞 +91 9876543210</p>
+
+<p>📧 support@myntraclone.com</p>
+
+<p>📍 Mumbai, India</p>
+
+</footer>
+
+</body>
+</html>

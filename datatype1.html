@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+
+    <h1>JavaScript Data Types Example</h1>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let name = "Kaja";          
+        let age = 20;              
+        let isStudent = true;      
+        let city;                  
+        let marks = null;          
+
+        document.getElementById("demo").innerHTML =
+            "Name: " + name + " (" + typeof name + ")" + "<br><br>" +
+            "Age: " + age + " (" + typeof age + ")" + "<br><br>" +
+            "Student: " + isStudent + " (" + typeof isStudent + ")" + "<br><br>" +
+            "City: " + city + " (" + typeof city + ")" + "<br><br>" +
+            "Marks: " + marks + " (" + typeof marks + ")";
+    </script>
+
+</body>
+</html>

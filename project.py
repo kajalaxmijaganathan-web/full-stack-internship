@@ -1,0 +1,33 @@
+students_name_list=["Kaja", "Ram", "John", "Ravi", "Ramesh", "Suresh", "Rohit", "Rahul", "Rakesh", "Ravi Kumar"]
+students_age_list=[20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+students_marks_list=[90, 85, 80, 75, 70, 65, 60, 55, 50, 45]
+students_grade_list=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+print("Students Name List:", students_name_list)
+print("Students Age List:", students_age_list)
+print("Students Marks List:", students_marks_list)
+print("Students Grade List:", students_grade_list)
+print(students_name_list[0])
+print(students_age_list[0])
+print(students_marks_list[0])
+print(students_grade_list[0])
+print(students_name_list[1])
+print(students_age_list[1])
+print(students_marks_list[1])
+print(students_grade_list[1])
+print(students_name_list[2])
+print(students_age_list[2])
+print(students_marks_list[2])
+print(students_grade_list[2])
+print(students_name_list[3])
+print(students_age_list[3])
+print(students_marks_list[3])
+print(students_grade_list[3])
+print(students_name_list[4])
+print(students_age_list[4])
+print(students_marks_list[4])
+print(students_grade_list[4])
+print(students_name_list[0:5])
+print(students_name_list[-1])
+print(students_name_list[-2])
+print(students_grade_list[-1])
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: black;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: greenyellow;
+            padding: 5px;
+        }
+
+        /* ID Selector */
+        #special {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+        button {
+            background-color: violet;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        /* MEDIA QUERY FOR MOBILE DEVICES */
+        @media (max-width: 768px) {
+
+            h1 {
+                color: darkblue;
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .highlight {
+                background-color: yellow;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Welcome to My Webpage</h1>
+
+    <p>This is a simple paragraph.</p>
+
+    <p class="highlight">
+        This paragraph is highlighted using class selector.
+    </p>
+
+    <p id="special">
+        This paragraph is styled using ID selector.
+    </p>
+
+    <button>Click Me</button>
+
+</body>
+</html>

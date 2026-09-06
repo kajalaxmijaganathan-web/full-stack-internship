@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Conditional Statements</title>
+</head>
+<body>
+
+    <h1>JavaScript Conditional Statements</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let marks = 85;
+
+        if (marks >= 90) {
+            result = "Grade A+";
+        }
+        else if (marks >= 75) {
+            result = "Grade A";
+        }
+        else if (marks >= 60) {
+            result = "Grade B";
+        }
+        else {
+            result = "Grade C";
+        }
+
+        document.getElementById("demo").innerHTML =
+            "Marks: " + marks + "<br>" +
+            "Result: " + result;
+    </script>
+
+</body>
+</html>

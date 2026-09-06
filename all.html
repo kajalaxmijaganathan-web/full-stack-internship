@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add to Cart ,Increase the amount Example</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            margin-top:50px;
+        }
+
+        .product{
+            width:300px;
+            margin:auto;
+            border:1px solid #ccc;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        img{
+            width:200px;
+            height:200px;
+            object-fit:cover;
+        }
+
+        button{
+            padding:10px 15px;
+            font-size:20px;
+            margin:5px;
+            cursor:pointer;
+        }
+
+        h3{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
+             alt="Laptop">
+
+        <h2>Laptop</h2>
+
+        <h3>Price: ₹50,000</h3>
+
+        <button onclick="decrease()">-</button>
+
+        <span id="quantity">0</span>
+
+        <button onclick="increase()">+</button>
+
+        <h3 id="cart">
+            Cart Items: 0
+        </h3>
+
+        <h3 id="total">
+            Total Amount: ₹0
+        </h3>
+
+    </div>
+
+    <script>
+
+        let quantity = 0;
+        let price = 50000;
+
+        function increase(){
+
+            quantity++;
+
+            document.getElementById("quantity").innerHTML = quantity;
+
+            document.getElementById("cart").innerHTML =
+            "Cart Items: " + quantity;
+
+            document.getElementById("total").innerHTML =
+            "Total Amount: ₹" + (quantity * price);
+        }
+
+        function decrease(){
+
+            if(quantity > 0){
+
+                quantity--;
+
+                document.getElementById("quantity").innerHTML = quantity;
+
+                document.getElementById("cart").innerHTML =
+                "Cart Items: " + quantity;
+
+                document.getElementById("total").innerHTML =
+                "Total Amount: ₹" + (quantity * price);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

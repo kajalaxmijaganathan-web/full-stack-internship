@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Object Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Object Example</h1>
+
+    <p id="demo"></p>
+
+    <script> 
+       
+        let student = {
+            name: "Kaja",
+            age: 20,
+            course: "B.Tech",
+
+            display: function() {
+                return "Name: " + this.name +
+                       "<br>Age: " + this.age +
+                       "<br>Course: " + this.course;
+            }
+        };
+
+        
+        document.getElementById("demo").innerHTML =
+            student.display();
+    </script>
+
+</body>
+</html>

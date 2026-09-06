@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add to Cart</title>
+</head>
+<body>
+
+    <h2>Shopping Cart</h2>
+
+    <p>Product: Laptop</p>
+
+    <button onclick="addToCart()">
+        Add to Cart
+    </button>
+
+    <h3 id="cart">Cart Items: 0</h3>
+
+    <script>
+        let count = 0;
+
+        function addToCart() {
+            count++;
+
+            document.getElementById("cart").innerHTML =
+            "Cart Items: " + count;
+        }
+    </script>
+
+</body>
+</html>
